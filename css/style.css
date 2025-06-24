@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    font-family: "Inter", sans-serif;
+    min-height: 100vh;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    background: #1c3467;
+}
+
+.header-main {
+    max-width: 1440px;
+    margin: auto;
+    padding: 26px 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.header-main-logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: white;
+}
+
+.header-main-logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.header-main-logo img {
+    width: 42px;
+}
+
+.header-burger-menu-links {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    background: white;
+    padding: 50px;
+    position: fixed;
+    height: 100vh;
+    transition: 0.5s;
+}
+
+.header-burger-menu-links a {
+    color: black;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.burger-menu {
+    background: transparent;
+    border: none;
+    display: none;
+    cursor: pointer;
+}
+
+.header-main-menu ul {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.header-main-menu ul a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    flex: auto;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.main h1 {
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 25px;
+}
+
+.description {
+    padding: 50px;
+    text-indent: 50px;
+    line-height: 1.3;
+}
+
+.cards {
+    margin: 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card {
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card figcaption {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card-author {
+    color: gray;
+    font-size: 14px;
+}
+
+.card-name {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.footer-main {
+    display: flex;
+    align-items: center;
+}
+
+.footer-main-logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.footer-main-logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 992px) {
+    .cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header-main {
+        padding: 26px 60px;
+    }
+
+    .burger-menu {
+        display: block;
+    }
+
+    .header-main-menu {
+        display: none;
+    }
+
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .cards {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
