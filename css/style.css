@@ -110,10 +110,11 @@ h1 {
     padding: 50px;
     text-indent: 50px;
     line-height: 1.5;
+    text-align: justify;
 }
 
 .cards {
-    margin-bottom: 50px;
+    margin: 50px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
