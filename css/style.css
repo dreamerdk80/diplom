@@ -46,6 +46,11 @@ header {
     width: 42px;
 }
 
+.header-burger-menu {
+    position: fixed;
+    width: 100%;
+}
+
 .header-burger-menu-links {
     display: flex;
     flex-direction: column;
@@ -53,7 +58,6 @@ header {
     width: 100%;
     background: white;
     padding: 50px;
-    position: fixed;
     height: 100vh;
     transition: 0.5s;
 }
