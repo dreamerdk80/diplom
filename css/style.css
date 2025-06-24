@@ -136,9 +136,18 @@ main {
     font-weight: bold;
 }
 
+footer {
+    background: #1c3467;
+}
+
 .footer-main {
+    max-width: 1440px;
+    margin: auto;
+    padding: 26px 120px;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .footer-main-logo {
@@ -152,6 +161,17 @@ main {
     text-decoration: none;
     font-size: 20px;
     font-weight: 500;
+}
+
+.footer-main-menu ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer-main-menu ul a {
+    color: white;
+    text-decoration: none;
 }
 
 @media screen and (max-width: 992px) {
@@ -176,10 +196,31 @@ main {
     .cards {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .footer-main {
+        padding: 26px 60px;
+    }
 }
 
 @media screen and (max-width: 480px) {
     .cards {
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    .footer-main {
+        padding: 26px 30px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .description {
+        text-indent: 25px;
+    }
+
+    .footer-main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
     }
 }
