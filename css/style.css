@@ -212,6 +212,10 @@ footer {
 }
 
 @media screen and (max-width: 480px) {
+    .description {
+        text-indent: 25px;
+    }
+
     .cards {
         grid-template-columns: repeat(1, 1fr);
     }
@@ -222,10 +226,6 @@ footer {
 }
 
 @media screen and (max-width: 320px) {
-    .description {
-        text-indent: 25px;
-    }
-
     .footer-main {
         display: flex;
         flex-direction: column;
