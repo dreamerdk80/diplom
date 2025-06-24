@@ -38,7 +38,7 @@ header {
 .header-main-logo a {
     color: white;
     text-decoration: none;
-    font-size: 24px;
+    font-size: 32px;
     font-weight: 500;
 }
 
@@ -65,7 +65,7 @@ header {
 .header-burger-menu-links a {
     color: black;
     text-decoration: none;
-    font-size: 24px;
+    font-size: 30px;
     font-weight: 500;
 }
 
@@ -93,8 +93,8 @@ main {
     margin: 0 auto;
 }
 
-.main h1 {
-    font-size: 32px;
+h1 {
+    font-size: 64px;
     font-weight: bold;
     text-align: center;
     padding-top: 25px;
@@ -154,6 +154,10 @@ footer {
     width: 100%;
 }
 
+.footer-main-logo img {
+    width: 42px;
+}
+
 .footer-main-logo {
     display: flex;
     align-items: center;
@@ -163,7 +167,7 @@ footer {
 .footer-main-logo a {
     color: white;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 32px;
     font-weight: 500;
 }
 
@@ -176,6 +180,7 @@ footer {
 .footer-main-menu ul a {
     color: white;
     text-decoration: none;
+    font-size: 30px;
 }
 
 @media screen and (max-width: 992px) {
