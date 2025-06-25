@@ -148,11 +148,11 @@ h1 {
 
 .card-author {
     color: gray;
-    font-size: 14px;
+    font-size: 10px;
 }
 
 .card-name {
-    font-size: 18px;
+    font-size: 14px;
     font-weight: bold;
     line-height: 1.3;
 }
