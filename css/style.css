@@ -11,7 +11,9 @@ body {
     font-family: "Inter", sans-serif;
     min-height: 100vh;
     background: url(../images/background/background-1.jpg);
+    background-attachment: fixed;
     z-index: -9999;
+
 }
 
 header {
