@@ -1,0 +1,22 @@
+{
+    "cards": [
+        {
+            "author": "Колесников Д.",
+            "title": "Разработка веб-приложений на PHP 8",
+            "image": "images/books/php/Kolesnikov_D._-_Razrabotka_veb-prilozhenij_na_PHP_8.png",
+            "description": ""
+        },
+        {
+            "author": "Котеров Д. В., Симдянов И. В.",
+            "title": "PHP 8. Наиболее полное руководство (в подлиннике)",
+            "image": "images/books/php/Koterov_D._V._Simdyanov_I._V._-_PHP_8._Naibolee_polnoe_rukovodstvo_(V_podlinnike)_-_2023.png",
+            "description": ""
+        },
+        {
+            "author": "Эрик А. Манн",
+            "title": "Рецепты PHP. Для профессиональных разработчиков",
+            "image": "images/books/php/Mett_Zandstra_RNR_8_obekty,_shablony_i_metodiki_programmirovaniya.png",
+            "description": ""
+        }
+    ]
+}
