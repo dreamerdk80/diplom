@@ -12,8 +12,6 @@ body {
     min-height: 100vh;
     background: url(../images/background/background-1.jpg);
     background-attachment: fixed;
-    z-index: -9999;
-
 }
 
 header {
@@ -80,6 +78,12 @@ header {
     cursor: pointer;
 }
 
+.header-main-menu button {
+    background: transparent;
+    color: white;
+    border: none;
+}
+
 .header-main-menu ul {
     display: flex;
     align-items: center;
@@ -139,6 +143,7 @@ h1 {
     border-radius: 10px;
     overflow: hidden;
     background-color: white;
+    z-index: -1;
 }
 
 .card figcaption {
