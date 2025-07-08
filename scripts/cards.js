@@ -37,6 +37,10 @@ function generateCardHTML(card) {
                 <p class="card-author">${card.author}</p>
 
                 <h2 class="card-name">${card.title}</h2>
+
+                <button class="basket">
+                    <img src="../images/icons/shopping-cart_icon-icons.com_65051.svg">
+                </button>
             </figcaption>
         </figure>
     `
