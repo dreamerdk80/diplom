@@ -110,6 +110,7 @@ main {
 }
 
 .container {
+    max-width: 1040px;
     display: flex;
     padding: 25px;
     gap: 15px;
@@ -132,7 +133,6 @@ main {
 .picture-container {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     max-width: 250px;
     width: 100%;
     gap: 10px;
