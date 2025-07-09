@@ -1,6 +1,9 @@
+const home = document.querySelector(".home")
 const langDescription = document.querySelector(".lang-description")
 const cards = document.querySelector(".cards")
 const langBtn = document.querySelectorAll(".lang-btn")
+const popup = document.querySelector(".popup")
+const container = document.querySelector(".container")
 let result
 
 window.addEventListener("load", async () => {
@@ -23,7 +26,7 @@ function generateDescriptionHTML(card) {
                 </figcaption>
             </figure>
 
-            <p>${card.text}</p>
+            ${card.text}
         </div>
     `
 }
@@ -38,11 +41,17 @@ function generateCardHTML(card) {
 
                 <h2 class="card-name">${card.title}</h2>
 
-                <button class="basket">
-                    <img src="../images/icons/shopping-cart_icon-icons.com_65051.svg">
+                <button onclick="generatePopupHTML(${card.description})" class="details">
+                    Подробнее
                 </button>
             </figcaption>
         </figure>
+    `
+}
+
+function generatePopupHTML(description) {
+    popup.innerHTML =  `
+        <p>${description}</p>
     `
 }
 
@@ -53,11 +62,23 @@ function generateCards() {
             const card = result[language]
             cards.innerHTML = ""
 
+            window.scrollTo(0, 0)
+
             langDescription.innerHTML = generateDescriptionHTML(card[0])
 
             for (let j = 1; j < card.length; j++) {
                 cards.innerHTML += generateCardHTML(card[j])
             }
+
+            container.classList.add("container-hidden")
         })
     }
 }
+
+home.addEventListener("click", () => {
+    container.classList.remove("container-hidden")
+    langDescription.innerHTML = ""
+    cards.innerHTML = ""
+
+    window.scrollTo(0, 0)
+})
