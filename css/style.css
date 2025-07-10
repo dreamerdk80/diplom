@@ -93,11 +93,6 @@ header {
     gap: 32px;
 }
 
-.header-main-menu ul a {
-    color: white;
-    text-decoration: none;
-}
-
 main {
     flex: auto;
     max-width: 1440px;
@@ -277,12 +272,20 @@ footer {
 }
 
 @media screen and (max-width: 480px) {
+    .header-main {
+        padding: 26px 40px;
+    }
+
     .home span {
         font-size: 20px;
     }
 
     .home img {
         width: 34px;
+    }
+
+    .lang-btn {
+        font-size: 20px;
     }
 
     .container {
@@ -300,10 +303,12 @@ footer {
 
     .description {
         text-indent: 25px;
+        padding: 10px 20px;
     }
 
     .cards {
         grid-template-columns: repeat(1, 1fr);
+        margin: 25px;
     }
 
     .footer-main {
@@ -312,20 +317,6 @@ footer {
 }
 
 @media screen and (max-width: 320px) {
-    .header-main {
-        padding: 26px 40px;
-    }
-    
-    
-
-    .description {
-        padding: 10px 20px;
-    }
-
-    .cards {
-        margin: 25px;
-    }
-
     .footer-main {
         display: flex;
         flex-direction: column;
