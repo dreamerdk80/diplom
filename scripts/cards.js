@@ -1,4 +1,4 @@
-const home = document.querySelector(".home")
+const homeBtn = document.querySelectorAll(".home")
 const langDescription = document.querySelector(".lang-description")
 const cards = document.querySelector(".cards")
 const langBtn = document.querySelectorAll(".lang-btn")
@@ -62,7 +62,7 @@ function generateCards() {
             const card = result[language]
             cards.innerHTML = ""
             
-            if (links.style.top == "98px") {
+            if (links.style.top == "92px") {
                 links.style.top = "-3000px"
             }
             
@@ -79,10 +79,12 @@ function generateCards() {
     }
 }
 
-home.addEventListener("click", () => {
-    container.classList.remove("container-hidden")
-    langDescription.innerHTML = ""
-    cards.innerHTML = ""
+homeBtn.forEach(home => {
+    home.addEventListener("click", () => {
+        container.classList.remove("container-hidden")
+        langDescription.innerHTML = ""
+        cards.innerHTML = ""
 
-    window.scrollTo(0, 0)
+        window.scrollTo(0, 0)
+    })
 })

@@ -40,6 +40,10 @@ header {
     cursor: pointer;
 }
 
+.home span {
+    font-size: 28px;
+}
+
 .home img {
     width: 42px;
 }
@@ -68,13 +72,6 @@ header {
     cursor: pointer;
 }
 
-.header-burger-menu-links a {
-    color: white;
-    text-decoration: none;
-    font-size: 24px;
-    font-weight: 500;
-}
-
 .burger-menu {
     background: transparent;
     border: none;
@@ -82,11 +79,12 @@ header {
     cursor: pointer;
 }
 
-.header-main-menu button {
+.lang-btn {
     background: transparent;
     color: white;
     border: none;
     cursor: pointer;
+    font-size: 28px;
 }
 
 .header-main-menu ul {
@@ -233,42 +231,10 @@ footer {
 }
 
 .footer-main {
-    max-width: 1440px;
-    margin: auto;
     padding: 26px 120px;
     display: flex;
-    align-items: flex-start;
     justify-content: space-between;
-    width: 100%;
-}
-
-.footer-main-logo img {
-    width: 42px;
-}
-
-.footer-main-logo {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-}
-
-.footer-main-logo a {
-    color: white;
-    text-decoration: none;
-    font-size: 20px;
-    font-weight: 500;
-}
-
-.footer-main-menu ul {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.footer-main-menu ul a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
+    justify-content: center;
 }
 
 @media screen and (max-width: 992px) {
@@ -293,13 +259,8 @@ footer {
     .container {
         flex-direction: column;
         max-width: 760px;
-        width: 100%;
-        margin: auto;
     }
-    .main-picture {
-        max-width: 760px;
-    }
-
+    
     .picture-container {
         flex-direction: row;
         max-width: 760px;
@@ -316,6 +277,14 @@ footer {
 }
 
 @media screen and (max-width: 480px) {
+    .home span {
+        font-size: 20px;
+    }
+
+    .home img {
+        width: 34px;
+    }
+
     .container {
         max-width: 460px;
         width: 100%;
@@ -343,6 +312,20 @@ footer {
 }
 
 @media screen and (max-width: 320px) {
+    .header-main {
+        padding: 26px 40px;
+    }
+    
+    
+
+    .description {
+        padding: 10px 20px;
+    }
+
+    .cards {
+        margin: 25px;
+    }
+
     .footer-main {
         display: flex;
         flex-direction: column;
