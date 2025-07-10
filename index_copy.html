@@ -12,10 +12,10 @@
 <body>
     <header>
         <section class="header-main">
-            <div class="header-main-logo">
-                <a href="index.html"><img src="images/icons/Library.svg" alt=""></a>
-                <button class="home">Библиотека</button>
-            </div>
+            <button class="home">
+                <img src="images/icons/Library.svg" alt="">
+                <span>Библиотека</span>
+            </button>
 
             <button class="burger-menu">
                 <img src="images/icons/Hamburger-Menu.svg" alt="">
@@ -25,16 +25,14 @@
                 <ul>
                     <button class="lang-btn" id="php">PHP</button>
                     <button class="lang-btn" id="javascript">JavaScript</button>
-                    <li><a href="html.html">HTML</a></li>
                 </ul>
             </div>
         </section>
 
         <section style="top: -3000px;" class="header-burger-menu">
-            <ul class="header-burger-menu-links">
-                <li><a href="php.html">PHP</a></li>
-                <li><a href="javascript.html">JavaScript</a></li>
-                <li><a href="html.html">HTML</a></li>
+            <ul class="header-burger-menu-btn">
+                <button class="lang-btn" id="php">PHP</button>
+                <button class="lang-btn" id="javascript">JavaScript</button>
             </ul>
         </section>
     </header>
@@ -53,7 +51,7 @@
             </div>
         </div>
 
-        <!-- <div class="popup"></div> -->
+        <div class="popup"></div>
 
         <section class="lang-description"></section>
 

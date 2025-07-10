@@ -61,7 +61,11 @@ function generateCards() {
             const language = langBtn[i].id
             const card = result[language]
             cards.innerHTML = ""
-
+            
+            if (links.style.top == "98px") {
+                links.style.top = "-3000px"
+            }
+            
             window.scrollTo(0, 0)
 
             langDescription.innerHTML = generateDescriptionHTML(card[0])
